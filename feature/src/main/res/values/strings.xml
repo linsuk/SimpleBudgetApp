@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="islaidosEUR">€</string>
+    <string name="pridetiIslaidasButton">Pridėti</string>
+    <string name="textView2">Įveskite išlaidas:</string>
+    <string name="pajamosEUR">€</string>
+    <string name="textViewPajamos">Įveskite pajamas:</string>
+    <string name="pridetiPajamasButton">PRIDĖTI</string>
+    <string name="Pastaba">✎  Įrašykite pastabą</string>
+</resources>

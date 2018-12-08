@@ -1,0 +1,102 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.simplebudgetapp.feature.PridetiPajamasFragment">
+
+
+    <Button
+        android:id="@+id/pridetiPajamasButton"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/pridetiPajamasButton"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewPajamos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/textViewPajamos"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pajamosEUR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/pajamosEUR"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/pajamosEUR"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPastaba"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="209dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPastaba"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/Pastaba"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/pridetiPajamasButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ExpenseImage"
+        android:layout_width="147dp"
+        android:layout_height="143dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/expense"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPajamos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+</android.support.constraint.ConstraintLayout>
